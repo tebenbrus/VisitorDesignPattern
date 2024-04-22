@@ -20,4 +20,9 @@ public class Telco implements TelcoSubscription {
     public String accept(UnliCallTextOffer unli, boolean unliCallText) {
         return unli.showUnliCallsTextOffer(telcoName, unliCallText);
     }
+
+    @Override
+    public String getTelcoName() {
+        return telcoName; // Implementing the method to return the telco name
+    }
 }
